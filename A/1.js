@@ -1,0 +1,36 @@
+var a=8;
+var b=11;
+var c=14;
+var d=17;
+var e=20;
+document.write("<h1>MIS快餐點餐價格表</h1>");
+document.write("<table>");
+document.write("<tr>");
+document.write(`<th>五號餐${a}元`); 
+document.write("</th>");
+document.write(`<th>四號餐${b}元`); 
+document.write("</th>");
+document.write(`<th>三號餐${c}元`); 
+document.write("</th>");
+document.write(`<th>二號餐${d}元`); 
+document.write("</th>");
+document.write(`<th>一號餐${e}元`); 
+document.write("</th>");
+document.write("</tr>");
+for (var n = 3; n <= 7; n++) {
+    document.write("<tr>");
+    document.write(`<td class="left_td">${n}`);
+    document.write("</td>");
+    document.write(`<td>${n}*${a}=${n*a}`);
+    document.write("</td>");
+    document.write(`<td>${n}*${b}=${n*b}`);
+    document.write("</td>");
+    document.write(`<td>${n}*${c}=${n*c}`);
+    document.write("</td>");
+    document.write(`<td>${n}*${d}=${n*d}`);
+    document.write("</td>");
+    document.write(`<td>${n}*${e}=${n*e}`);
+    document.write("</td>");
+    document.write("</tr>");
+}
+document.write("</table>");
